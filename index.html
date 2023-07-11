@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRATOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Metal&family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section class="header">
+<nav class="back">
+    <p>Chandan <span>Yadav</span></p>
+    <div class="nav-links">
+        <ul>
+            <li><a href="">Work</a></li>
+            <li><a href="./about.html" target="_self">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="./contact.html" target="_blank">Contact</a></li>     
+        </ul>
+    </div>
+</nav>
+
+<div class="grid-container">
+    <div class="item1"><p class="name">Hello, I am Chandan</p> 
+        <div class="wrapper">
+        <div class="static-txt">And I'm a</div>
+        <ul class="dynamic-txt">
+            <li><span>Student</span></li>
+            <li><span>Web Developer</span></li>
+            <li><span>Gamer</span></li>
+            <li><span>Artist</span></li>
+        </ul> 
+        </div> 
+        <p class="eman"> A talented and versatile individual with a passion for technology,
+        a creative spirit, and a dedication to excellence. With his unique blend of skills and a 
+        growth mindset, he is primed for success and ready to tackle any challenge that comes his way.</p></div>
+
+    <div class="item2"><img class="pic" src="./assets/chandan.jpg"height=350/></div>
+</div>
+
+<nav class="center"> 
+    <div class="doo">
+       <ul style="list-style-type:none">
+        <li class="font">What I Do</li>
+        <li><i class="material-icons">favorite</i>BLOG POST</li>
+        <li><i class="material-icons">favorite</i>EDITORIAL CONTENT <i class="material-icons">favorite</i>SOCIAL STRATEGY</li>
+        <li><i class="material-icons">favorite</i>BRAND STORIES <i class="material-icons">favorite</i>WEBSITE COPY</li>
+        <li><i class="material-icons">favorite</i>PRODUCT DESCRIPTIONS</li>
+       </ul>
+    </div>
+</nav>
+
+<h3>PROJECTS</h3>
+
+<div class="pro">  
+    <div class="car"><p>Welcome to the world of Car Service Management! Our project aims to revolutionize the way automotive services are handled.The admin page empowers service providers with efficient management tools, enabling them to streamline operations and nice,Emphasizing -friendly design and robust security measures,It ensures a smooth and secure experience cutting-edge solution!</p>
+    <img src="./assets/Screenshot (513).png"height=300 class="grayscale" id="mechanz"></div>
+    
+    <div class="car car2"><p>Contribution to SODA
+        I've contributed to Soda Foundation dashboard as a whole project during my last semester where open source Git Hub was thought to us.</p>
+    <img src="./assets/portfolio1.jpg"height=300 class="grayscale1"></div>
+
+    <div class="car car3"><p>Contribution to Character Design
+        Created a game character from the scratch and contributed to Hoyoverse by developing a character called Al-Haytham</p>
+    <img src="./assets/portfolio2.jpg"height=300 class="grayscale1 border"></div>
+
+    <div class="car car4"><p>Contribution to Character Design
+        Created a game character from the scratch and contributed to Hoyoverse by developing a character called Al-Haytham</p>
+    <section class="grayscale" id="mec" ></section></div>
+</div>
+
+<div class="grid">
+    <div class="tw">
+            <ul style="list-style-type:none">
+            <li><a href="https://twitter.com/ChandanYad19171"target="_blank"><i class='bx bxl-twitter'></i> Twitter</a> </li>
+            <li><a href="https://www.linkedin.com/in/chandu-yadav-648a54238/"target="_blank"><i class='bx bxl-linkedin-square' ></i> LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/lakshmi.srinivas.3304673/"target="_blank"><i class='bx bxl-facebook-circle'></i>Facebook</a></li>
+            <li><a href="https://www.instagram.com/chandu_spidey/"target="_blank"><i class='bx bxl-instagram' ></i> Instagram</a> </li></ul>
+        </div>
+    <div class="lc">Let's Create.</div>
+<a href="./contact.html"><div class="srbtn">
+    <p class="btntext">Get in Touch</p>
+    <div class="btn2">
+        <p class="btntext2">Yes</p>
+    </div>
+</div></a>
+</div>  
+
+    <footer>
+        <div><p>&copy; 2023 Made By Chandan Yadav S</p></div>
+    </footer>
+
+   <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const workLink = document.querySelector('.nav-links ul li:first-child a');
+            const projectsLink = document.querySelector('.nav-links ul li:nth-child(3) a');
+            const centerSection = document.querySelector('.center');
+            const proSection = document.querySelector('.pro');
+
+            workLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                const offset = 114; 
+                const targetPosition = centerSection.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+            });
+            projectsLink.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const offset = 317; 
+                    const targetPosition = proSection.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</section> 
+</body>
+</html>
