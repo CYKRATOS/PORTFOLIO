@@ -3,59 +3,9 @@
 /*html{
   scroll-behavior:smooth;
 }*/
-
-
-.wrapper{display: inline-flex;}
-.wrapper .static-txt{
-  font-size: 45px;
-  color: black;
-  font-family:'Lora', serif;
+body{
+  background-color: rgb(253, 188, 164); 
 }
-.wrapper .dynamic-txt{
-  margin-left: 15px;
-  line-height: 50px;
-  height: 50px;
-  overflow: hidden;
-}
-.dynamic-txt li{
-  list-style: none;
-  font-size: 35px;
-  font-weight: 400;
-  font-family:'Lora', serif;
-  color: chartreuse;
-  position: relative;
-  top: 0;
-  animation: slide 6s steps(4) infinite;
-  animation-delay: 2s;
-}
-@keyframes slide {
-  100%{
-    top: -160px;
-  }
-}
-.dynamic-txt li span{
-  position: relative;
-}
-.dynamic-txt li span::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: lightslategray;
-  border-left: 2px solid chartreuse;
-  animation: typing 1.5s steps(10) infinite;
-  animation-delay: 2s;
-}
-@keyframes typing {
-  100%{
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
-}
-
-
-
 h3{font-size: 35px;
   text-align: center;
   padding-top: 80px;
@@ -63,41 +13,34 @@ h3{font-size: 35px;
   font-family: 'Oswald', sans-serif;
   background-color: rgb(253, 188, 164); 
 }
-.pro{ background-color: rgb(253, 188, 164); }
 
-.car{display: flex;}
-.car2{display: flex;flex-direction: row-reverse;margin-top: 50px;}
-.car3{margin-top: 120px;}
-.car4{margin-top: 120px;margin-left: 40px; padding-bottom:100px;display: flex;flex-direction: row-reverse;}
-#mec{
-  cursor: pointer;
-  position: relative;
-  width: 100%;
-  background: url(./assets/portfolio4.jpg),url(./assets/splash.jpg);
-  background-size:cover;
-  background-position: center;
-  background-blend-mode: screen;
+.pro{
+  background-color: rgb(253, 188, 164); 
+  width: 540px;
+  height: 540px;
+  display: flex;
+  margin-left: 420px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
-body > section > div.pro > div.car.car3 > p{margin: 80px;}
 
-.pro > .car > p{
-  margin: 80px;
-  margin-top: 30px;
-  font-size: 20px;
-  font-family: 'Metal', cursive!important;
-  letter-spacing: 2px;
-  font-style: oblique;
+.pro > .car{
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: center;
 }
-body > section > div.pro > div.car.car4 > p{margin: 95px;}
-body > section > div.pro > div.car.car2 > p{margin: 85px;}
-.pro > .car > #mechanz{margin-right: 40px;cursor: pointer;}
-body > section > div.pro > div.car.car2 > img{margin-left: 40px;
-  border-radius:30% 100% 0% 100% / 0% 100% 30% 100%;cursor: pointer;}
-body > section > div.pro > div.car.car3 > img{margin-right: 40px;cursor: pointer;}
-
+body > section > div.pro > div > p{
+  font-family: 'Metal', cursive;
+  font-size: 18px
+}
+.pro > #as{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#mec{border-radius:30% 100% 0% 100% / 0% 100% 30% 100%;}
 
 footer {
-    background-color:darkslategrey  ;
+    background-color:darkslategrey;
     color:white;cursor: pointer;
     padding: 50px;
     text-align: center;font-size: large;font-style: oblique;
@@ -136,6 +79,7 @@ h3{font-weight: lighter;font-family: 'Lexend Zetta', sans-serif;}
   filter: blur(3px);
   transition: filter 0.9s ease-in-out;
   border-radius: 20px;
+  cursor: pointer;
 }
 .grayscale:hover {
   filter: blur(0);
@@ -143,6 +87,8 @@ h3{font-weight: lighter;font-family: 'Lexend Zetta', sans-serif;}
 .grayscale1{
   filter:grayscale(100%);
   transition: filter 0.9s ease-in-out;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .grayscale1:hover {
   filter:grayscale(0);
@@ -259,9 +205,6 @@ body > section > div.grid > a {text-decoration: none;}
 }
 .srbtn:active{
   box-shadow: 0px 5px 6px black;
-}
-body > section > div.pro > div.car.car3 > img{
-  border-radius: 20px;  
 }
 .grid .gt a:hover{
  background:rgb(241, 111, 64);
