@@ -21,12 +21,14 @@ body{color: #0ef !important;background-image: url(./assets/Photo\ by\ eberhard\ 
 .font{
     font-family: 'Playfair Display SC', serif;
     letter-spacing: 3px;
-    background-color: rgb(144, 144, 144);
+    background-color: rgba(255, 255, 255, 0.6);
 }
+
 .third{
     position: relative;
     top: 100px;
     margin-left: 400px;
+    border-radius: 10px;
 }
 .first{
     position: absolute;
@@ -69,34 +71,40 @@ body{color: #0ef !important;background-image: url(./assets/Photo\ by\ eberhard\ 
 }
 .zoro > .mac{
     margin-top: 50px;
-    font-family: Voyage;
+    font-family: 'Alice', serif;
     word-spacing: 3px; 
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
+    cursor: pointer;
 }
+.zoro > .mac:hover{background-color: rgb(0, 0, 0);border-radius:10px;}
 .zoro > .cam{
     margin-top: 30px;
-    font-family: Voyage;
+    font-family: 'Alice', serif;
     word-spacing: 3px; 
     text-align: center;
     margin-bottom: 70px;
-    font-size: 40px;
+    font-size: 20px;
+    cursor: pointer;
 }
+.zoro > .cam:hover{background-color: rgb(0, 0, 0);border-radius:10px;}
 
 .box1 {
-  border: 5px solid rgb(50, 50, 50);
+  border: 5px solid rgb(0, 0, 0);
   margin-left: 18%;
   margin-right: 18%;
   text-align: center;
   position: relative;
 }
+.box1:hover{background-color: rgba(0, 0, 0, 0.7);border-color: #0ef;}
 .box2 {
-  border: 5px solid rgb(50, 50, 50);
+  border: 5px solid rgb(0, 0, 0);
   margin-left: 26%;
   margin-right: 26%;
   text-align: center;
   position: relative;
 }
+.box2:hover{background-color: rgba(0, 0, 0, 0.7);border-color:  #0ef;}
 .box1 > h1{font-style: italic;color:#0ef;margin-bottom: 60px;margin-top: 20px;}
 .box2 > h1{font-style: italic;color: #0ef;margin-bottom: 60px;margin-top: 20px;}
 .box1 > .peace{ font-family: 'Niramit', sans-serif;word-spacing: 3px;font-weight: bolder;
@@ -124,49 +132,34 @@ body > div.box2 > div > p:nth-child(6){margin-bottom: 100px;}
     background-color:transparent;
     white-space:pre-line;
 }
-.A{width: 10px;height: 10px;border: 2.5px solid black;border-radius: 50%;position: relative;}
+ 
+.A{width: 10px;height: 10px;border: 2.5px solid #0ef;border-radius: 50%;position: relative;}
 
-.A:hover{background-color: black;}
+.A:hover{background-color:#0ef;color: #0ef;}
 
 .A:hover::before {
   content: "About Me";
   position: absolute;
-  top: -10px;
-  left: -85px;
-  color: black;
+  top: -12px;
+  left: -105px;
+  font-size: 20px;
   padding: 5px;
   white-space: nowrap;
   font-family: Arial, Helvetica, sans-serif;
+  background-color:black;
+  border-radius: 20px;
 }
 #B:hover::before {
   content: "Work Experience";
-  position: absolute;
-  top: -10px;
-  left: -138px;
-  color: black;
-  padding: 5px;
-  white-space: nowrap;
-  font-family: Arial, Helvetica, sans-serif;
+  left: -170px;
 }
 #C:hover::before {
   content: "Education";
-  position: absolute;
-  top: -10px;
-  left: -88px;
-  color: black;
-  padding: 5px;
-  white-space: nowrap;
-  font-family: Arial, Helvetica, sans-serif;
+  left: -107px;
 }
 #D:hover::before {
   content: "Skills";
-  position: absolute;
-  top: -10px;
-  left: -55px;
-  color: black;
-  padding: 5px;
-  white-space: nowrap;
-  font-family: Arial, Helvetica, sans-serif;
+  left: -65px;  
 }
 
 footer {
@@ -188,26 +181,13 @@ footer {
     justify-content: space-around;
 }
 .box3 {
-    border: 3px solid black;
+    border: 5px solid black;
     padding: 5%;
     font-family: 'Metal', cursive;
     font-size: x-large;
     font-weight: 400;
 }
-.font > a{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    margin-left:230px;
-    margin-top: 40px;
-    text-decoration: none;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 1%;
-}
-.font > a:hover{
-    background-color:rgb(226, 47, 47);
-}
+.box3:hover{background-color:rgba(0, 0, 0, 0.7);border-color: #0ef;}
 .arrow > a{
     text-decoration: none;
     display: flex;
@@ -216,11 +196,44 @@ footer {
     font-size: 100px;
     color: #0ef !important;
 }
+.btn-box a {
+        position: relative;
+        top: 40px;
+        left: 230px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 40px;
+        background: rgb(100, 0, 70);
+        border: 2px solid rgb(97, 0, 89);
+        border-radius: 10px;
+        font-weight: 700;
+        color: black;
+        text-decoration: none;
+     }
+     .btn-box a:nth-child(1){
+        background:transparent;
+        color: black;
+     }
+     .btn-box a::before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width:0%;
+        height: 100%;
+        background:rgb(136, 66, 186);
+        z-index:-1;
+        transition: .5s;
+     }
+     .btn-box a:hover::before{
+        width:100%;}
 </style>
 <body>
 
     <video id="video-background" autoplay loop muted>
-        <source src="./assets/can2.mp4"type="video/mp4">
+        <source src="./assets/Recording 2023-07-12 163008.mp4"type="video/mp4">
     </video>
 
     <nav class="side">
@@ -233,7 +246,7 @@ footer {
     </nav>
 
     <div class="font">
-        <a href="./index.html"><p class="home">HOME</p></a>
+        <div class="btn-box"><a href="./index.html"><p>HOME</p></a></div>
         <h1 class="first">CHANDAN</h1>
         <h1 class="fir">YADAV</h1>
         <p class="second">Aspiring Journalist</p>
@@ -242,10 +255,10 @@ footer {
     
     <div class="zoro" id="roo" >
         <h1>About Me</h1>
-        <p class="mac">To build a career and achieve a challenging and 
-            responsible position in the industry, to enhance my skills 
-            and ability for the growth of the organization.</p>
-        <p class="cam">This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+        <p class="mac">A talented and versatile individual with a passion for technology,
+            a creative spirit, and a dedication to excellence. With his unique blend of skills and a 
+            growth mindset, he is primed for success and ready to tackle any challenge that comes his way.</p>
+        <p class="cam">To obtain a challenging and rewarding jop in field, where I can utilize my skills, knowledge, to contribute to the success of the organization and further enhance my professional growth..</p>
     </div>
 
     <br>
