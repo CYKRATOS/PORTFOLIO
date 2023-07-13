@@ -7,10 +7,11 @@ body{
   background-color: rgb(253, 188, 164); 
 }
 h3{font-size: 35px;
+   font-weight: lighter;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  font-family: 'Oswald', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Lexend Zetta', sans-serif;
   background-color: rgb(253, 188, 164); 
 }
 
@@ -60,8 +61,6 @@ footer {
     right: 0;
     z-index: 1;
   }
-
-h3{font-weight: lighter;font-family: 'Lexend Zetta', sans-serif;}
 
 .item1 { grid-area: main;}
 @keyframes slideIn{0%{opacity: 0;transform: translateX(-100%);}
