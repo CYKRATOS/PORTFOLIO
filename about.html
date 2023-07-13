@@ -205,8 +205,8 @@ footer {
         align-items: center;
         width: 100px;
         height: 40px;
-        background: rgb(100, 0, 70);
-        border: 2px solid rgb(97, 0, 89);
+        background: rgb(136, 66, 186);
+        border: 2px solid #0ef;
         border-radius: 10px;
         font-weight: 700;
         color: black;
@@ -222,13 +222,32 @@ footer {
         top:0;
         left:0;
         width:0%;
-        height: 100%;
+        height:100%;
         background:rgb(136, 66, 186);
         z-index:-1;
         transition: .5s;
      }
+
      .btn-box a:hover::before{
         width:100%;}
+.btn {
+    display: inline-block;
+    margin-left: 560px;
+    margin-top: 50px;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    background-color:rgba(255, 255, 255, 0.6) ;
+    box-shadow: 0 0 2rem #0ef;
+    font-size: 1.6rem;
+    color:black;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    transition: .3s ;
+    text-decoration: none;
+}
+.btn:hover {
+    box-shadow: none;
+}
 </style>
 <body>
 
@@ -312,6 +331,8 @@ footer {
         </ul>
        </div>
     </div>
+
+    <a href="./assets/CHANDAN.pdf" class="btn">Donwload CV</a>
 
 <div class="arrow"><a href="#"><i class='bx bxs-chevrons-up bx-flashing'></i></a></div>
 
