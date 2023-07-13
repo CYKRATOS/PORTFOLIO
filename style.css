@@ -21,7 +21,12 @@ h3{font-size: 35px;
   display: flex;
   margin-left: 420px;
   overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
   scroll-snap-type: x mandatory;
+}
+.pro::-webkit-scrollbar {
+  display: none;
 }
 
 .pro > .car{
