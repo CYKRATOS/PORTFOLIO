@@ -20,19 +20,23 @@
    <section class="header">
 <nav class="back">
     <p>Chandan <span>Yadav</span></p>
+
     <div class="nav-links">
         <ul>
             <li><a href="">Work</a></li>
             <li><a href="./about.html" target="_self">About</a></li>
-            <li><a href="">Projects</a></li>
             <li><a href="./contact.html" target="_self">Contact</a></li>     
         </ul>
     </div>
 </nav>
 
 <div class="grid-container">
-    <div class="item1"><p class="name">Hello, I am Chandan</p> 
-        
+    <div class="item1"><p class="name">Hello, I am Chandan</p>
+
+        <div class="wrapper">
+            <h2>And a <span id="pan"></span></h2>  
+        </div>
+
         <p class="eman"> A talented and versatile individual with a passion for technology,
         a creative spirit, and a dedication to excellence. With his unique blend of skills and a 
         growth mindset, he is primed for success and ready to tackle any challenge that comes his way.</p></div>
@@ -53,10 +57,12 @@
 </nav>
 
 <h3>PROJECTS</h3>
+<div id="row">
+<div id="row1"><i class='bx bxs-chevrons-left bx-fade-left' ></i></div>
 
 <div class="pro">  
     <div id="as" class="car"><p>Welcome to the world of Car Service Management! Our project aims to revolutionize the way automotive services are handled.The admin page empowers service providers with efficient management tools, enabling them to streamline operations and nice,Emphasizing -friendly design and robust security measures,It ensures a smooth and secure experience cutting-edge solution!</p>
-    <img src="./assets/Screenshot (513).png"height=300 class="grayscale"></div>
+    <img src="./assets/Screenshot (513).png"height=280 class="grayscale"></div>
     
     <div id="as" class="car"><p>Contribution to SODA
         I've contributed to Soda Foundation dashboard as a whole project during my last semester where open source Git Hub was thought to us.</p>
@@ -71,6 +77,8 @@
     <img src="./assets/portfolio4.jpg"height=300 class="grayscale1"></div>
 </div>
 
+<div id="row1"><i class='bx bxs-chevrons-right bx-fade-left' ></i></div>
+</div>
 <div class="grid">
     <div class="tw">
             <ul style="list-style-type:none">
@@ -95,21 +103,13 @@
    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const workLink = document.querySelector('.nav-links ul li:first-child a');
-            const projectsLink = document.querySelector('.nav-links ul li:nth-child(3) a');
             const centerSection = document.querySelector('.center');
-            const proSection = document.querySelector('.pro');
 
             workLink.addEventListener('click', function(event) {
                 event.preventDefault();
                 const offset = 114; 
                 const targetPosition = centerSection.getBoundingClientRect().top + window.pageYOffset - offset;
                 window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-            });
-            projectsLink.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    const offset = 235; 
-                    const targetPosition = proSection.getBoundingClientRect().top + window.pageYOffset - offset;
-                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
             });
         });
     </script>
