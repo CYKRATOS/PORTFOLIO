@@ -1,13 +1,13 @@
 *{margin: 0;padding: 0;font-family: 'Poppins', sans-serif;box-sizing: border-boxs;}
-
 /*html{
   scroll-behavior:smooth;
 }*/
 body{
   background-color: rgb(253, 188, 164); 
 }
-h3{font-size: 35px;
-   font-weight: lighter;
+h3{
+  font-size: 35px;
+  font-weight: lighter;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -20,7 +20,6 @@ h3{font-size: 35px;
   width: 540px;
   height: 540px;
   display: flex;
-  margin-left: 420px;
   overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none; 
@@ -35,7 +34,8 @@ h3{font-size: 35px;
   flex-direction: column;
   scroll-snap-align: center;
 }
-body > section > div.pro > div > p{
+
+#as > p{
   font-family: 'Metal', cursive;
   font-size: 18px
 }
@@ -83,7 +83,7 @@ footer {
   filter: blur(3px);
   transition: filter 0.9s ease-in-out;
   border-radius: 20px;
-  cursor: pointer;
+  cursor:ew-resize;
 }
 .grayscale:hover {
   filter: blur(0);
@@ -92,7 +92,7 @@ footer {
   filter:grayscale(100%);
   transition: filter 0.9s ease-in-out;
   border-radius: 20px;
-  cursor: pointer;
+  cursor:ew-resize;
 }
 .grayscale1:hover {
   filter:grayscale(0);
@@ -213,4 +213,39 @@ body > section > div.grid > a {text-decoration: none;}
 .grid .gt a:hover{
  background:rgb(241, 111, 64);
  border: 1px solid black;
+}
+
+#row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#row1{font-size: 100px;}
+
+.wrapper > h2{color: #fff;font-family: 'Lora', serif;font-weight: lighter;}
+
+#pan:before{
+  content: '';
+  animation: mate infinite 8s;
+  font-family: 'Lora', serif;font-weight: lighter;
+}
+@keyframes mate{
+  0%{
+    content: 'Student';
+  }
+  20%{
+    content: 'Web Developer';
+  }
+  40%{
+    content: 'Gamer';
+  }
+  60%{
+    content: 'Designer';
+  }
+  80%{
+    content: 'Photographer';
+  }
+  100%{
+    content: 'Learner';
+  }
 }
