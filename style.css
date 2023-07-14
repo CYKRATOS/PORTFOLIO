@@ -1,7 +1,5 @@
 *{margin: 0;padding: 0;font-family: 'Poppins', sans-serif;box-sizing: border-boxs;}
-/*html{
-  scroll-behavior:smooth;
-}*/
+
 body{
   background-color: rgb(253, 188, 164); 
 }
@@ -111,9 +109,10 @@ footer {
 .name{font-size: 50px;font-family: 'Lora', serif;opacity: 0;animation: slideIn 2s ease-in-out forwards;}
 .eman{font-family: 'Lora', serif;opacity: 0;animation: slideIn 2s ease-in-out forwards;}
 
-.center .doo ul{font-size: 40px;text-align: center;padding-left: 250px;padding-bottom: 60px;}
-.center .doo .font{font-family: 'Oswald', sans-serif;font-size: 40px;padding-bottom: 60px;padding-top: 60px;}
-.center{background-color:wheat;}
+.center .doo ul{font-size: 40px;text-align: center;}
+.center .doo .font{font-family: 'Oswald', sans-serif;font-size: 40px;padding-bottom: 70px;}
+.center{background-color:wheat;display: flex;justify-content: center;}
+.center > .doo{padding: 80px;padding-top: 60px;}
 
 nav{display: flex;align-items: center;justify-content: space-between;padding: 1% 4%;padding: 2rem;}
 
@@ -156,18 +155,6 @@ background:limegreen;transition: .6s;}
   background-color:whitesmoke;
 }
 
-/*.grid .gt a{
-      font-size: x-large;
-      text-decoration: none;
-      color: black;
-      display: inline-block;
-      padding: 8px 40px;
-      border: 1px solid black;
-      margin-top: 10px;
-      border-radius: 10%;
-      background: transparent;
-      transition: .6s;
-}*/
 body > section > div.grid > a {text-decoration: none;}
 .srbtn{
   background: orange;
