@@ -114,11 +114,12 @@ footer {
 .center{background-color:wheat;display: flex;justify-content: center;}
 .center > .doo{padding: 80px;padding-top: 60px;}
 
-nav{display: flex;align-items: center;justify-content: space-between;padding: 1% 4%;padding: 2rem;}
+body > section > nav.back > p > i{font-size: 35px;color: #39FF14;}
+.back{display: flex;align-items: center;justify-content: space-between;padding: 1% 4%;padding: 2rem;}
 
 nav p {color: whitesmoke;font-size: 30px;text-decoration: none;cursor: pointer;}
 
-nav p span {color:chartreuse}
+nav p span {color:#39FF14;}
 
 .nav-links{text-align: end;}
 
@@ -143,8 +144,6 @@ background:limegreen;transition: .6s;}
       margin-right: 66px;
     }
 .lc { grid-area: menu;font-size: 100px;margin-top: 111px;margin-left: 60px;}
-/*.gt { grid-area: main; margin-left: 60px;margin-bottom: 200px; }*/
-
 .grid .tw ul li a{text-decoration: none;color:black;}
 .grid .tw ul{margin-top: 75px;}
 .grid {
@@ -214,6 +213,7 @@ body > section > div.grid > a {text-decoration: none;}
 #pan:before{
   content: '';
   animation: mate infinite 8s;
+  animation-delay: 2s;
   font-family: 'Lora', serif;font-weight: lighter;
 }
 @keyframes mate{
