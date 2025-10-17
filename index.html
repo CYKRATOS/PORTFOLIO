@@ -1,119 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chandan Yadav — Student Portfolio</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRATOS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Metal&family=Rampart+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <section class="header">
-<nav class="back">
-   <p> <i class='bx bxs-radiation bx-spin' ></i>Chandan <span>Yadav</span></p>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <div class="nav-links">
-        <ul>
-            <li><a href="">Work</a></li>
-            <li><a href="./about.html" target="_self">About</a></li>
-            <li><a href="./contact.html" target="_self">Contact</a></li>     
-        </ul>
-    </div>
-</nav>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
 
-<div class="grid-container">
-    <div class="item1"><p class="name">Hello, I am Chandan</p>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Accent cursor circle (Thibaut-like microinteraction) -->
+    <div id="cursor-accent" aria-hidden="true"></div>
 
-        <div class="wrapper">
-            <h2>And a <span id="pan"></span></h2>  
+    <!-- NAVBAR -->
+    <nav
+      id="mainNav"
+      class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top py-3"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#hero">CHANDAN</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="btn btn-outline-dark btn-sm" href="#contact"
+                >Hire / DM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero" class="vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left column: hero text -->
+          <div class="col-lg-6">
+            <div class="hero-inner">
+              <p class="eyebrow">Student • UI/UX & Frontend</p>
+              <h1 class="hero-title">
+                <span class="hero-repeat">DESIGN</span>
+                <span class="hero-core">I make thoughtful interfaces</span>
+              </h1>
+              <p class="lead text-muted mt-3">
+                I’m a student building clean, usable UI and small web apps. I
+                love accessible design, microinteractions, and neat CSS
+                transitions.
+              </p>
+              <div class="mt-4">
+                <a href="#projects" class="btn btn-dark me-2">View Projects</a>
+                <a href="#contact" class="btn btn-outline-dark">Contact</a>
+              </div>
+              <div class="mt-5 small text-muted">
+                Based in India • Open to internships & freelance
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column: hero visual (placeholder) -->
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="hero-visual">
+              <div class="mock-device">
+                <!-- Put an image or illustration. Using CSS shapes for demo -->
+                <div class="screen">
+                  <div class="screen-card">Project preview</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-6">
+      <div class="container">
+        <div class="section-head text-center mb-5">
+          <h2 class="mb-2">Selected Projects</h2>
+          <p class="text-muted">
+            Small case studies and experiments — hover to explore.
+          </p>
         </div>
 
-        <p class="eman"> A talented and versatile individual with a passion for technology,
-        a creative spirit, and a dedication to excellence. With my unique blend of skills and a 
-        growth mindset, primed for success and ready to tackle any challenge that comes in my own way.</p></div>
+        <div class="row g-4">
+          <!-- Project card (repeat for multiple projects) -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card reveal">
+              <div
+                class="card-image"
+                style="
+                  background-image: linear-gradient(135deg, #f3f4f6, #e9eefb);
+                "
+              >
+                <div class="project-meta">
+                  <h3>UI Redesign — Campus App</h3>
+                  <p class="muted">
+                    Mobile-first redesign for a student planner
+                  </p>
+                </div>
+                <div class="overlay">
+                  <button
+                    class="btn btn-sm btn-light view-btn"
+                    data-title="UI Redesign — Campus App"
+                    data-desc="A mobile-first planner with quick-add, reminders and study timers."
+                  >
+                    Explore →
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
 
-    <div class="item2"><img class="pic" src="./assets/chandan.jpg"height=350/></div>
-</div>
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card reveal">
+              <div
+                class="card-image"
+                style="
+                  background-image: linear-gradient(135deg, #fff7ed, #ffefc7);
+                "
+              >
+                <div class="project-meta">
+                  <h3>Portfolio Template</h3>
+                  <p class="muted">
+                    A minimal portfolio template built in HTML/CSS/JS
+                  </p>
+                </div>
+                <div class="overlay">
+                  <button
+                    class="btn btn-sm btn-light view-btn"
+                    data-title="Portfolio Template"
+                    data-desc="A lightweight template focusing on readability and performance."
+                  >
+                    Explore →
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
 
-<nav class="center"> 
-    <div class="doo">
-       <ul style="list-style-type:none">
-        <li class="font">What I Do</li>
-        <li><i class="material-icons">favorite</i>BLOG POST</li>
-        <li><i class="material-icons">favorite</i>EDITORIAL CONTENT <i class="material-icons">favorite</i>SOCIAL STRATEGY</li>
-        <li><i class="material-icons">favorite</i>BRAND STORIES <i class="material-icons">favorite</i>WEBSITE COPY</li>
-        <li><i class="material-icons">favorite</i>PRODUCT DESCRIPTIONS</li>
-       </ul>
-    </div>
-</nav>
-
-<h3>PROJECTS</h3>
-<div id="row">
-<div id="row1"><i class='bx bxs-chevrons-left bx-fade-left' ></i></div>
-
-<div class="pro">  
-    <div id="as" class="car"><p>Welcome to the world of Car Service Management! Our project aims to revolutionize the way automotive services are handled.The admin page empowers service providers with efficient management tools, enabling them to streamline operations and nice,Emphasizing -friendly design and robust security measures,It ensures a smooth and secure experience cutting-edge solution!</p>
-    <img src="./assets/Screenshot (513).png"height=280 class="grayscale"></div>
-    
-    <div id="as" class="car"><p>Contribution to SODA
-        I've contributed to Soda Foundation dashboard as a whole project during my last semester where open source Git Hub was thought to us.</p>
-    <img src="./assets/portfolio1.jpg"height=300 class="grayscale1" id="mec" ></div>
-
-    <div id="as" class="car"><p>Contribution to Character Design
-        Created a game character from the scratch and contributed to Hoyoverse by developing a character called Al-Haytham</p>
-    <img src="./assets/portfolio2.jpg"height=300 class="grayscale1"></div>
-
-    <div id="as" class="car"><p>Contribution to Character Design
-        Created a game character from the scratch and contributed to Hoyoverse by developing a character called Al-Haytham</p>
-    <img src="./assets/portfolio4.jpg"height=300 class="grayscale1"></div>
-</div>
-
-<div id="row1"><i class='bx bxs-chevrons-right bx-fade-left' ></i></div>
-</div>
-<div class="grid">
-    <div class="tw">
-            <ul style="list-style-type:none">
-            <li><a href="https://twitter.com/ChandanYad19171"target="_blank"><i class='bx bxl-twitter'></i> Twitter</a> </li>
-            <li><a href="https://www.linkedin.com/in/chandu-yadav-648a54238/"target="_blank"><i class='bx bxl-linkedin-square' ></i> LinkedIn</a></li>
-            <li><a href="https://www.facebook.com/lakshmi.srinivas.3304673/"target="_blank"><i class='bx bxl-facebook-circle'></i>Facebook</a></li>
-            <li><a href="https://www.instagram.com/chandu_spidey/"target="_blank"><i class='bx bxl-instagram' ></i> Instagram</a> </li></ul>
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card reveal">
+              <div
+                class="card-image"
+                style="
+                  background-image: linear-gradient(135deg, #e8fdf5, #d8f7ea);
+                "
+              >
+                <div class="project-meta">
+                  <h3>Study Timer App</h3>
+                  <p class="muted">Pomodoro-based productivity app</p>
+                </div>
+                <div class="overlay">
+                  <button
+                    class="btn btn-sm btn-light view-btn"
+                    data-title="Study Timer App"
+                    data-desc="A tiny Pomodoro timer with simple analytics."
+                  >
+                    Explore →
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-    <div class="lc">Let's Create.</div>
-<a href="./contact.html"target=_self><div class="srbtn">
-    <p class="btntext">Get in Touch</p>
-    <div class="btn2">
-        <p class="btntext2">Yes</p>
-    </div>
-</div></a>
-</div>  
+      </div>
+    </section>
 
-    <footer>
-        <div><p>&copy; 2023 Made By Chandan Yadav S</p></div>
+    <!-- ABOUT -->
+    <section id="about" class="py-6 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 reveal">
+            <h2>About me</h2>
+            <p class="text-muted">
+              I’m a BCA student focused on front-end development and UI design.
+              I build accessible interfaces, experiment with interactions, and
+              enjoy turning ideas into working prototypes.
+            </p>
+
+            <div class="mt-4">
+              <h6 class="mb-2">Skills</h6>
+              <div class="skill">
+                <div class="d-flex justify-content-between">
+                  <small>HTML & CSS</small><small>85%</small>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill mt-2">
+                <div class="d-flex justify-content-between">
+                  <small>JavaScript</small><small>75%</small>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill mt-2">
+                <div class="d-flex justify-content-between">
+                  <small>UI Design</small><small>70%</small>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <h6 class="mb-3">Experience & Education</h6>
+            <ul class="timeline">
+              <li>
+                <strong>Intern — Web Dev</strong><br /><small class="muted"
+                  >Summer 2025 • Some startup</small
+                >
+              </li>
+              <li>
+                <strong>BCA — Specialization in AI & ML</strong><br /><small
+                  class="muted"
+                  >2024 — Present</small
+                >
+              </li>
+              <li>
+                <strong>Freelance Projects</strong><br /><small class="muted"
+                  >2023 — Present</small
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 reveal">
+            <h2>Get in touch</h2>
+            <p class="text-muted">
+              Open to internships, freelance or collaboration. Say hi!
+            </p>
+
+            <form id="contactForm" class="mt-4">
+              <div class="mb-3">
+                <label class="form-label">Your name</label>
+                <input class="form-control" required id="name" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required id="email" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  required
+                  id="message"
+                ></textarea>
+              </div>
+              <button class="btn btn-dark" type="submit">Send message</button>
+              <div
+                id="formFeedback"
+                class="mt-3 small text-success"
+                style="display: none"
+              >
+                Thanks — message sent (demo).
+              </div>
+            </form>
+          </div>
+
+          <div
+            class="col-lg-6 d-flex align-items-center justify-content-center reveal"
+          >
+            <div class="contact-card p-4 text-center">
+              <h5>Contact</h5>
+              <p class="muted mb-1">Email</p>
+              <a href="mailto:youremail@example.com">youremail@example.com</a>
+              <hr />
+              <p class="muted mb-1">Location</p>
+              <div>India</div>
+              <hr />
+              <p class="muted mb-1">Availability</p>
+              <div>Intern / Freelance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center">
+      <div class="container">
+        <small class="text-muted"
+          >© <span id="year"></span> Chandan Yadav — Student Portfolio</small
+        >
+      </div>
     </footer>
 
-   <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const workLink = document.querySelector('.nav-links ul li:first-child a');
-            const centerSection = document.querySelector('.center');
+    <!-- Project Modal (simple) -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0">
+          <div class="modal-body p-4">
+            <button
+              class="btn-close float-end"
+              data-bs-dismiss="modal"
+            ></button>
+            <h4 id="modalTitle"></h4>
+            <p id="modalDesc"></p>
+            <div class="mt-3">
+              <div class="mock-case">
+                Mock case study area — replace with images/screenshots and
+                details.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            workLink.addEventListener('click', function(event) {
-                event.preventDefault();
-                const offset = 114; 
-                const targetPosition = centerSection.getBoundingClientRect().top + window.pageYOffset - offset;
-                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-            });
-        });
-    </script>
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-</section> 
-</body>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
 </html>
