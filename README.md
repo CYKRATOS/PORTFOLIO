@@ -1,4 +1,4 @@
-# Welcome to my portfolio website!
+<!-- # Welcome to my portfolio website!
 <div align="center">
 <picture>
   <img width=800 src="https://cdn.ciaobang.com/image/work/github.png"/>
@@ -66,4 +66,4 @@ Mark all boxes with X after you completed your changes:
 
 ### Enjoy!
 
-[Enjoy the website!](https://mattiaippoliti.pages.dev/) 
+[Enjoy the website!](https://mattiaippoliti.pages.dev/)  -->
