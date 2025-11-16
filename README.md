@@ -8,4 +8,6 @@ A passionate learner exploring **Machine Learning, Artificial intelligence, and 
 💼 **Visit my portfolio:**  
 👉 https://cykratos.github.io/PORTFOLIO/
 
+<a href= "https://cykratos.github.io/PORTFOLIO/">Personal Portfolio</a>
+
 </div>
