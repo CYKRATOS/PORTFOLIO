@@ -6,6 +6,6 @@
 A passionate learner exploring **Machine Learning, Artificial intelligence, and Full-Stack Web Development**.
 
 💼 **Visit my portfolio:**  
-👉 <a href= "https://cykratos.github.io/PORTFOLIO/">Personal Portfolio</a>
+👉 <a href= "https://cykratos.github.io/PORTFOLIO/">CHANDAN YADAV S</a>
 
 </div>
